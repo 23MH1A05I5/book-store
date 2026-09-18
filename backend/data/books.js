@@ -166,7 +166,7 @@ const books = [
     isbn: '978-1-57731-152-2',
     genre: 'Self-Help',
     description:
-      'The author shows that our 'normal' state of mind is characterized by compulsive thinking. This unobserved mind runs our life. But if we can step out of the mind and make it our servant rather than our master, we discover our true identity.',
+      'The author shows that our \'normal\' state of mind is characterized by compulsive thinking. This unobserved mind runs our life. But if we can step out of the mind and make it our servant rather than our master, we discover our true identity.',
     price: 14.49,
     countInStock: 40,
     rating: 4.5,

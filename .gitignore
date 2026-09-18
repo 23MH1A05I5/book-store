@@ -55,3 +55,14 @@ desktop.ini
 # ========================
 *.pem
 .cache/
+
+# ========================
+# Lock Files (use npm only)
+# ========================
+pnpm-lock.yaml
+**/pnpm-lock.yaml
+
+# ========================
+# Nested / duplicate repo folders
+# ========================
+BookStore-MERN/
