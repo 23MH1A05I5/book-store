@@ -43,7 +43,7 @@ const __dirname = path.dirname(__filename);
 // ─── Middlewares ──────────────────────────────────────────────────────────────
 app.use(
   cors({
-    origin: process.env.NODE_ENV === 'production' ? false : 'http://localhost:5173',
+    origin: true,
     credentials: true,
   })
 );

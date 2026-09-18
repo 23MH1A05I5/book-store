@@ -12,8 +12,9 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  // Configure Axios default base URL
-  axios.defaults.baseURL = 'http://localhost:5000';
+  // Configure Axios default base URL (Render / Production ready)
+  const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+  axios.defaults.baseURL = apiUrl.endsWith('/') ? apiUrl.slice(0, -1) : apiUrl;
 
   // Add auth header for requests if logged in
   useEffect(() => {
